@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Head from "next/head";
+
 export const Hero = () => {
   return (
     <section className="flex h-[600px] w-full flex-col overflow-hidden rounded-lg bg-center">
