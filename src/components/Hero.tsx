@@ -10,7 +10,7 @@ export const Hero = () => {
         height={180}
         layout="responsive"
       />
-      <p>something</p>
+      <p>develop</p>
     </section>
   );
 };
