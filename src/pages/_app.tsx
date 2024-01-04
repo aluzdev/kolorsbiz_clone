@@ -4,7 +4,7 @@ import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div className="flex min-h-screen flex-col gap-8 bg-cream px-2.5 pt-11">
+    <div className="flex min-h-screen flex-col gap-8 bg-cream px-2.5 p-20">
       <Component {...pageProps} />
     </div>
   );

@@ -1,17 +1,9 @@
-import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import flowbite from "flowbite/plugin";
+import type { Config } from "tailwindcss";
 
-export default {
-  content: ["./src/**/*.tsx"],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
-      colors: {
-        cream: "#FAFAFF",
-      },
-    },
-  },
-  plugins: [],
-} satisfies Config;
+const config: Config = {
+  content: ["./app/**/*.{ts,tsx}", "./node_modules/flowbite-react/lib/**/*.js", "./src/**/*.tsx"],
+  plugins: [flowbite],
+};
+
+export default config;

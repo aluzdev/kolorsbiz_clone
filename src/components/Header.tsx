@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { Alert } from "flowbite-react";
 export const Header = () => {
   return (
     <section className="flex place-content-between">
