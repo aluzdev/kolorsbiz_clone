@@ -1,5 +1,6 @@
 import Carousel from "nuka-carousel";
 import React from "react";
+import UniqueCard from "./UniqueCard";
 
 export const Unique = () => {
   return (
@@ -15,7 +16,11 @@ export const Unique = () => {
           pagingDotsStyle: { fill: "#9873E6" },
         }}
       >
-        <p>1</p>
+        <UniqueCard
+          src="/routes.svg"
+          title="diseño de rutas"
+          description="para garantizar la puntualidad"
+        />
         <p>2</p>
         <p>3</p>
         <p>4</p>
