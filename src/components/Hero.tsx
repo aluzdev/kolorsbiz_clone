@@ -12,7 +12,6 @@ export const Hero = () => {
         style={{
           width: "100%",
           objectFit: "cover",
-          backgroundPosition: "center center",
         }}
       />
       <div className="text-centerleading-[45px] min-h-[400px] w-full bg-grape pt-6">
