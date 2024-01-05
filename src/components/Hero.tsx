@@ -11,8 +11,10 @@ export const Hero = () => {
         quality={100}
         style={{
           width: "100%",
+          height: "auto",
           objectFit: "cover",
         }}
+        priority
       />
       <div className="text-centerleading-[45px] min-h-[400px] w-full bg-grape pt-6">
         <div className="flex flex-col items-center justify-center gap-6 text-center">
