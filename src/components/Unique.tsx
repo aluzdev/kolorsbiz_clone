@@ -6,7 +6,8 @@ export const Unique = () => {
     <div>
       <Carousel
         autoplay
-        autoplayInterval={100}
+        autoplayInterval={2500}
+        wrapAround
         defaultControlsConfig={{
           nextButtonClassName: "hidden",
           prevButtonClassName: "hidden",
@@ -14,10 +15,10 @@ export const Unique = () => {
           pagingDotsStyle: { fill: "#9873E6" },
         }}
       >
-        <img src="/burger.svg" />
-        <img src="/favicon.ico" />
-        <img src="/hero-bus.png" />
-        <img src="/kolorsbiz.svg" />
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
       </Carousel>
     </div>
   );
