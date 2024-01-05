@@ -2,13 +2,18 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className="flex w-full flex-col overflow-hidden rounded-lg bg-center">
+    <section className="flex w-full flex-col overflow-hidden rounded-3xl bg-center">
       <Image
         src="/hero-bus.png"
         alt="bus"
         width={360}
         height={180}
-        style={{ width: "100%", objectFit: "cover" }}
+        quality={100}
+        style={{
+          width: "100%",
+          objectFit: "cover",
+          backgroundPosition: "center center",
+        }}
       />
       <div className="text-centerleading-[45px] min-h-[400px] w-full bg-grape pt-6">
         <div className="flex flex-col items-center justify-center gap-6 text-center">
