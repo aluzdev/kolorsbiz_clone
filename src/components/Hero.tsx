@@ -23,7 +23,7 @@ export const Hero = () => {
           <p className="w-60 text-pretty text-2xl leading-[37px] text-white">
             Soluciones para las necesidades de tu empresa
           </p>
-          <button className="h-14 w-[210px]  rounded-[40px] bg-grass text-xl font-bold text-white">
+          <button className="h-14 w-[210px] cursor-pointer  rounded-[40px] bg-grass text-xl font-bold text-white">
             Conoce más
           </button>
         </div>
