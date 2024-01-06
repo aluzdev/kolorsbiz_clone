@@ -13,8 +13,10 @@ const config: Config = {
       creme: "#FFF5EA",
       grape: "#9873E6",
       grass: "#22CFAE",
+      dark: "#28265D"
     },
   },
 };
+
 
 export default config;
