@@ -7,7 +7,7 @@ Nuka Carousel does not provide a direct way to edit the dimentions of selection 
 The style below is a necessary evil to edit carousel dots.
 */
 @layer components {
-    .carousel-dots svg {
-        @apply w-4 h-4
-      }
+  .carousel-dots svg {
+    @apply h-4 w-4;
   }
+}

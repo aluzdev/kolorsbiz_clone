@@ -1,13 +1,15 @@
 import Carousel from "nuka-carousel";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import UniqueCard from "./UniqueCard";
 
 export const Unique = () => {
+  const slideStyle = "w-[256px] mx-auto text-center";
   return (
-    <div>
+    <section>
       <Carousel
-        autoplay
-        autoplayInterval={2500}
+        // autoplay
+        // autoplayInterval={2500}
+        cellAlign="center"
         wrapAround
         defaultControlsConfig={{
           nextButtonClassName: "hidden",
@@ -16,15 +18,17 @@ export const Unique = () => {
           pagingDotsStyle: { fill: "#9873E6" },
         }}
       >
-        <UniqueCard
-          src="/routes.svg"
-          title="diseño de rutas"
-          description="para garantizar la puntualidad"
-        />
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
+        <div className={slideStyle}>
+          <UniqueCard
+            src="/routes.svg"
+            title="diseño de rutas"
+            description="para garantizar la puntualidad"
+          />
+        </div>
+        <div className={slideStyle}>
+          <p>2</p>
+        </div>
       </Carousel>
-    </div>
+    </section>
   );
 };
