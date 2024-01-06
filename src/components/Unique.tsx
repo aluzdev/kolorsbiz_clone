@@ -3,32 +3,41 @@ import React, { useEffect, useRef } from "react";
 import UniqueCard from "./UniqueCard";
 
 export const Unique = () => {
-  const slideStyle = "w-[256px] mx-auto text-center";
   return (
     <section className=" min-h-[430px]">
       <Carousel
         // autoplay
         // autoplayInterval={2500}
-
+        className="max-w-64"
         cellAlign="center"
         wrapAround
         defaultControlsConfig={{
           nextButtonClassName: "hidden",
           prevButtonClassName: "hidden",
-          pagingDotsContainerClassName: "gap-10 !top-11 carousel-dots",
+          pagingDotsContainerClassName: "gap-3 !top-11 carousel-dots",
           pagingDotsStyle: { fill: "#9873E6" },
         }}
       >
-        <div className={slideStyle}>
-          <UniqueCard
-            src="/routes.svg"
-            title="diseño de rutas"
-            description="para garantizar la puntualidad"
-          />
-        </div>
-        <div className={slideStyle}>
-          <p>2</p>
-        </div>
+        <UniqueCard
+          src="/routes.svg"
+          title="diseño de rutas"
+          description="para garantizar la puntualidad"
+        />
+        <UniqueCard
+          src="/points.svg"
+          title="puntos de abordaje"
+          description="seguros y flexibles"
+        />
+        <UniqueCard
+          src="/security.svg"
+          title="monitoreo"
+          description="en tiempo real para la seguridad y seguimiento de pasajeros"
+        />
+        <UniqueCard
+          src="/driver.svg"
+          title="conductores"
+          description="capacitados"
+        />
       </Carousel>
     </section>
   );
