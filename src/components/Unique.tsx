@@ -5,16 +5,17 @@ import UniqueCard from "./UniqueCard";
 export const Unique = () => {
   const slideStyle = "w-[256px] mx-auto text-center";
   return (
-    <section>
+    <section className=" min-h-[430px]">
       <Carousel
         // autoplay
         // autoplayInterval={2500}
+
         cellAlign="center"
         wrapAround
         defaultControlsConfig={{
           nextButtonClassName: "hidden",
           prevButtonClassName: "hidden",
-          pagingDotsContainerClassName: "gap-10 carousel-dots",
+          pagingDotsContainerClassName: "gap-10 !top-11 carousel-dots",
           pagingDotsStyle: { fill: "#9873E6" },
         }}
       >

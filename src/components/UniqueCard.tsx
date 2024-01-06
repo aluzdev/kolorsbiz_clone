@@ -12,7 +12,7 @@ export default function UniqueCard({
   description,
 }: UniqueCardProps) {
   return (
-    <div className="flex h-60 w-64 flex-col gap-5">
+    <div className="flex w-64 flex-col items-center justify-center gap-5">
       <Image
         src={src}
         width={250}
@@ -22,7 +22,9 @@ export default function UniqueCard({
       <p className=" max-w-60 text-center text-base font-bold uppercase leading-5 text-grape">
         {title}
       </p>
-      <p className=" text-dark max-w-60 text-center text-sm">{description}</p>
+      <p className=" text-dark max-w-60 text-pretty text-center text-sm">
+        {description}
+      </p>
     </div>
   );
 }
