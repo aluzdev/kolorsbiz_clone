@@ -6,8 +6,8 @@ export const Unique = () => {
   return (
     <section className=" min-h-[430px]">
       <Carousel
-        // autoplay
-        // autoplayInterval={2500}
+        autoplay
+        autoplayInterval={2500}
         className="max-w-64"
         cellAlign="center"
         wrapAround
@@ -38,6 +38,12 @@ export const Unique = () => {
           title="conductores"
           description="capacitados"
         />
+        <UniqueCard
+          src="/soap.svg"
+          title="medidas de sanidad"
+          description="para tu protección"
+        />
+        <UniqueCard src="/headset.svg" title="atención" description="24/7" />
       </Carousel>
     </section>
   );
